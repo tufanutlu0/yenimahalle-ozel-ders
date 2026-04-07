@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ankara Yenimahalle, Batıkent ve Demetevler'de en iyi matematik özel ders sistemi. Sıfırdan Zirveye metodolojisi ile LGS ve YKS'de başarıyı yakalayın.">
+    <meta name="keywords" content="Yenimahalle özel ders, Ankara matematik özel ders, Batıkent matematik, Demetevler özel ders, LGS matematik, YKS matematik">
+    <meta name="author" content="Sıfırdan Zirveye Matematik">
+    <title>Yenimahalle Matematik Özel Ders | Başarıya Giden Sistem</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "name": "Sıfırdan Zirveye Matematik",
+          "image": "https://sifirdanzirveyematematik.online/logo.png",
+          "telephone": "05518685795",
+          "url": "https://sifirdanzirveyematematik.online",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Yenimahalle",
+            "addressRegion": "Ankara",
+            "addressCountry": "TR"
+          },
+          "areaServed": ["Yenimahalle", "Batıkent", "Demetevler"]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Çocuğumun özel dersten verim aldığını nasıl anlarım?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dersten sonra 'Hoca çok iyi çözüyor' diyorsa değil, 'Artık ben de çözebiliyorum' diyorsa verim alıyordur. Bizim tavsiye ettiğimiz yöntemlerde öğrenci pasif izleyici değil, aktif problem çözücüdür."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Sadece matematik mi alınmalı, tüm dersler mi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Öğrencilerin %80'i için sınavları kazandıran da kaybettiren de matematiktir. Matematik korkusu aşıldığında öğrencinin diğer derslere olan özgüveni de otomatik olarak artar."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* CSS Değişkenleri & Reset */
+        :root {
+            --primary: #0f172a; /* Derin Gece Mavisi */
+            --secondary: #3b82f6; /* Elektrik Mavisi */
+            --accent: #f59e0b; /* Altın Sarısı */
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; color: var(--text-dark); background-color: var(--bg-light); line-height: 1.6; overflow-x: hidden; }
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Ortak Sınıflar */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section-padding { padding: 100px 0; }
+        .text-center { text-align: center; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: var(--transition); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* Butonlar */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 16px 32px; border-radius: 50px; font-weight: 600; font-size: 1.1rem;
+            transition: var(--transition); cursor: pointer; border: none; outline: none;
+        }
+        .btn-primary { background: linear-gradient(135deg, var(--secondary), #2563eb); color: var(--white); box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3); }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 25px rgba(59, 130, 246, 0.4); }
+        .btn-whatsapp { background: #25D366; color: white; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); }
+        .btn-whatsapp:hover { transform: translateY(-3px); background: #128C7E; }
+        .btn i { margin-right: 10px; font-size: 1.2rem; }
+
+        /* Hero Section */
+        .hero {
+            position: relative; background: var(--primary); color: var(--white);
+            padding: 160px 0 120px; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(59,130,246,0.15) 0%, rgba(15,23,42,1) 60%); z-index: 1;
+        }
+        .hero-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; text-align: center; }
+        .hero-badge {
+            display: inline-block; padding: 8px 16px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);
+            border-radius: 30px; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; margin-bottom: 20px; color: var(--accent);
+        }
+        .hero h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 24px; font-weight: 800; }
+        .hero p { font-size: 1.25rem; color: #cbd5e1; margin-bottom: 40px; font-weight: 300; }
+
+        /* Hatalar (Grid Cards) */
+        .problem-section { background: var(--white); }
+        .section-header { max-width: 700px; margin: 0 auto 60px; text-align: center; }
+        .section-header h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 16px; }
+        .section-header p { color: var(--text-light); font-size: 1.1rem; }
+        
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .card {
+            background: var(--white); padding: 40px 30px; border-radius: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0; transition: var(--transition);
+        }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); border-color: var(--secondary); }
+        .card-icon { width: 60px; height: 60px; background: #eff6ff; border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: var(--secondary); margin-bottom: 24px; }
+        .card h3 { font-size: 1.4rem; margin-bottom: 16px; color: var(--primary); }
+        .card p { color: var(--text-light); }
+
+        /* Testimonial & Felsefe */
+        .split-section { display: flex; align-items: center; gap: 60px; }
+        .split-content { flex: 1; }
+        .split-image { flex: 1; position: relative; }
+        .quote-box {
+            background: linear-gradient(135deg, var(--primary), #1e293b); color: white;
+            padding: 50px; border-radius: 24px; position: relative; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        .quote-box i { font-size: 3rem; color: rgba(255,255,255,0.1); position: absolute; top: 30px; left: 30px; }
+        .quote-text { font-size: 1.3rem; font-style: italic; margin-bottom: 20px; position: relative; z-index: 2; line-height: 1.8;}
+        .quote-author { font-weight: 600; color: var(--accent); }
+
+        .feature-list { list-style: none; margin-top: 30px; }
+        .feature-list li { display: flex; align-items: flex-start; margin-bottom: 20px; }
+        .feature-list i { color: var(--secondary); font-size: 1.5rem; margin-right: 15px; margin-top: 3px; }
+        .feature-list h4 { font-size: 1.2rem; margin-bottom: 5px; color: var(--primary); }
+        .feature-list p { color: var(--text-light); }
+
+        /* SSS (Akordeon) */
+        .faq-section { background: var(--white); }
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { border-bottom: 1px solid #e2e8f0; padding: 24px 0; cursor: pointer; }
+        .faq-question { display: flex; justify-content: space-between; align-items: center; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 1.2rem; color: var(--primary); transition: var(--transition); }
+        .faq-question:hover { color: var(--secondary); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: var(--transition); opacity: 0; color: var(--text-light); padding-top: 0; }
+        .faq-item.active .faq-answer { max-height: 500px; opacity: 1; padding-top: 16px; }
+        .faq-item i { transition: transform 0.3s ease; }
+        .faq-item.active i { transform: rotate(180deg); }
+
+        /* CTA */
+        .cta-section { padding: 100px 0; background: linear-gradient(135deg, var(--secondary), #1d4ed8); color: white; text-align: center; }
+        .cta-content { max-width: 800px; margin: 0 auto; }
+        .cta-content h2 { font-size: 3rem; margin-bottom: 24px; color: white; }
+        .cta-content p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 40px; }
+        .contact-methods { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+
+        /* Footer */
+        footer { background: var(--primary); color: #94a3b8; padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.1); }
+        .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .social-links a { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); color: white; transition: var(--transition); margin-left: 10px; }
+        .social-links a:hover { background: var(--secondary); transform: translateY(-3px); }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .split-section { flex-direction: column; }
+            .section-header h2 { font-size: 2rem; }
+            .cta-content h2 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container hero-content reveal">
+            <div class="hero-badge">YENİMAHALLE & BATIKENT</div>
+            <h1>Matematik Korkusunu Yenen Öğrencilerin Sırrı</h1>
+            <p>Çocuğunuzun eğitiminde deneme-yanılma yapacak zamanınız yok. Sadece bir ders değil, öğrenmeyi öğreten, özgüven aşılayan ve başarıyı garanti altına alan doğru sistemi keşfedin.</p>
+            <a href="#iletisim" class="btn btn-primary"><i class="fas fa-rocket"></i> Sistemi İncele</a>
+        </div>
+    </header>
+
+    <section class="section-padding problem-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Özel Ders Alırken Yapılan 3 Büyük Hata</h2>
+                <p>Ankara'da binlerce veli iyi niyetle çıktığı eğitim yolculuğunda maalesef yanlış stratejilerle zaman ve motivasyon kaybediyor. İşte kaçınmanız gereken o kritik hatalar:</p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card reveal">
+                    <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Sadece Yakınlık ve Fiyat Odaklılık</h3>
+                    <p>Evinize en yakın veya fiyatı en uygun seçenek her zaman çocuğunuzun seviyesine uygun metodolojiye sahip değildir. Yanlış hocaya yapılan yatırım, çocuğun dersten tamamen kopmasına neden olur.</p>
+                </div>
+                <div class="card reveal" style="transition-delay: 0.1s;">
+                    <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Temel Eksikleri Görmezden Gelmek</h3>
+                    <p>Temeli zayıf bir öğrenciye doğrudan yeni nesil LGS/YKS soruları çözdürmeye çalışmak büyük bir hatadır. Öğrencinin seviyesi "sıfır" kabul edilmeli ve yargılanmadan ilerlenmelidir.</p>
+                </div>
+                <div class="card reveal" style="transition-delay: 0.2s;">
+                    <div class="card-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h3>Öğrenciyi Pasif Bırakmak</h3>
+                    <p>Dersten sonra öğrenci "Hocam soruları çok hızlı ve güzel çözüyor" diyorsa ortada bir sorun vardır. Önemli olan hocanın çözmesi değil, öğrencinin aktif olarak o problemi çözebilmesidir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container split-section">
+            <div class="split-image reveal">
+                <div class="quote-box">
+                    <i class="fas fa-quote-left"></i>
+                    <p class="quote-text">"Eskiden özel ders hocası soruyu çözer, ben sadece izlerdim. Bu sistemle tanışınca önce matematiğin dilini öğrendim, temelim sıfırdan atıldı. Şimdi LGS yeni nesil soruları kendim parçalıyorum."</p>
+                    <p class="quote-author">— Yenimahalle'den Bir Öğrencimiz</p>
+                </div>
+                <div class="quote-box" style="margin-top: 20px; background: var(--white); color: var(--text-dark); border: 1px solid #e2e8f0; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <p class="quote-text" style="font-size: 1.1rem; color: var(--text-light);">"Çocuğumun matematiği o kadar kötüydü ki özel ders aldırmaya çekiniyorduk. Sistemi 'sıfırdan' kurmaları inanılmaz işe yaradı."</p>
+                    <p class="quote-author" style="color: var(--secondary);">— Batıkent'ten Bir Veli</p>
+                </div>
+            </div>
+            
+            <div class="split-content reveal">
+                <h2 style="font-size: 2.2rem; color: var(--primary); margin-bottom: 20px;">Doğru Sistem Nasıl Olmalı?</h2>
+                <p style="color: var(--text-light); font-size: 1.1rem; margin-bottom: 30px;">Klasik ezberci mantığı unutun. Piyasada kalıcı başarı sağlayan sistemler, öğrenciye bilgi yüklemek yerine "öğrenmeyi öğretmeyi" hedefler.</p>
+                
+                <ul class="feature-list">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Sıfırdan Zirveye Felsefesi</h4>
+                            <p>Öğrencinin eksiklikleri tespit edilir, yargılamadan, sabırla ve adım adım en temelden (sıfırdan) başlanarak zirveye doğru bir yol haritası çizilir.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-brain"></i>
+                        <div>
+                            <h4>Aktif Problem Çözücü Kimliği</h4>
+                            <p>Öğrenci tahtada izleyici değil, masada uygulayıcıdır. Formül ezberletilmez, problemin mantığı kavratılır. Artık "ben de çözebiliyorum" denilir.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-home"></i>
+                        <div>
+                            <h4>Kişiselleştirilmiş Konfor Alanı</h4>
+                            <p>Yenimahalle, Batıkent ve Demetevler çevresinde öğrencinin en rahat odaklanabileceği ortamda, tamamen ona özel bir planlamayla ilerlenir.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding faq-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Velilerin En Çok Sorduğu Sorular</h2>
+                <p>Eğitim sürecine dair aklınıza takılan sorulara şeffaf yanıtlar veriyoruz.</p>
+            </div>
+            
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <div class="faq-question">Çocuğumun özel dersten verim aldığını nasıl anlarım? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Dersten sonra "Hoca çok iyi çözüyor" diyorsa değil, "Artık ben de çözebiliyorum" diyorsa verim alıyordur. Bizim tavsiye ettiğimiz yöntemlerde öğrenci pasif izleyici değil, aktif problem çözücüdür. Kalemi kendi eline alıp sonuca ulaştığında gerçek öğrenme gerçekleşmiş demektir.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Sadece matematik mi alınmalı, tüm dersler mi? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Öğrencilerin %80'i için sınavları kazandıran da kaybettiren de matematiktir. Matematik korkusu aşıldığında öğrencinin analitik düşünme becerisi gelişir ve diğer derslere olan özgüveni de otomatik olarak artar. Bu yüzden odak noktası, her zaman matematiği temelden ele alan bir sistem olmalıdır.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Ders planlamaları ve lokasyon nasıl ayarlanıyor? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Hizmet bölgelerimiz ağırlıklı olarak Ankara, Yenimahalle, Batıkent ve Demetevler çevresidir. Öğrencinin en rahat odaklanabileceği ortamda, okul ve yaşam rutinine tamamen uygun, kişiye özel bir zaman planlamasıyla ilerliyoruz.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="cta-section reveal">
+        <div class="container cta-content">
+            <h2>Başarı Hikayenizi Birlikte Yazalım</h2>
+            <p>Öğrencinin seviyesini belirlemek, eksiklerini tespit etmek ve "Sıfırdan Zirveye" ulaşacak o kusursuz yol haritasını çıkarmak için ücretsiz danışmanlık alın. Agresif satış yok, sadece eğitime adanmış gerçek bir uzmanlık var.</p>
+            
+            <div class="contact-methods">
+                <a href="https://wa.me/905518685795" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> 0551 868 57 95</a>
+                <a href="http://sifirdanzirveyematematik.online" class="btn btn-primary" target="_blank"><i class="fas fa-globe"></i> Web Sitemizi Ziyaret Edin</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <strong style="color: white; font-size: 1.2rem;">Sıfırdan Zirveye Matematik</strong>
+                <p style="margin-top: 5px; font-size: 0.9rem;">Yenimahalle & Batıkent Özel Ders Çözümleri</p>
+            </div>
+            <div class="social-links">
+                <span>Bizi Takip Edin:</span>
+                <a href="https://instagram.com/sifirdanzirveyematematik06" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/905518685795" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // SSS (FAQ) Akordeon İşlemi
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Diğerlerini kapatmak isterseniz alttaki 3 satırı aktif edin
+                // faqItems.forEach(otherItem => {
+                //    if(otherItem !== item) otherItem.classList.remove('active');
+                // });
+                item.classList.toggle('active');
+            });
+        });
+
+        // Scroll Reveal Animasyonu
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100; // Elementin görünmesi için gereken px
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Sayfa yüklendiğinde de çalıştır (Hero section için)
+        reveal();
+    </script>
+</body>
+</html>
